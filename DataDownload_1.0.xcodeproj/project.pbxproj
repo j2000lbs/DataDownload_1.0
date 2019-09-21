@@ -12,6 +12,9 @@
 		339485DE23299DE900A991F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339485DC23299DE900A991F0 /* Main.storyboard */; };
 		339485E023299DEC00A991F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 339485DF23299DEC00A991F0 /* Assets.xcassets */; };
 		339485E323299DEC00A991F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 339485E123299DEC00A991F0 /* LaunchScreen.storyboard */; };
+		339485EB232B0DC700A991F0 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339485EA232B0DC700A991F0 /* Downloader.swift */; };
+		3398DFD22332C5AF004F5E6F /* CredentialCreater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3398DFD12332C5AF004F5E6F /* CredentialCreater.swift */; };
+		3398DFD42332C9BC004F5E6F /* URLSessionTaskDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3398DFD32332C9BC004F5E6F /* URLSessionTaskDelegateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		339485DF23299DEC00A991F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		339485E223299DEC00A991F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		339485E423299DEC00A991F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339485EA232B0DC700A991F0 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		3398DFD12332C5AF004F5E6F /* CredentialCreater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialCreater.swift; sourceTree = "<group>"; };
+		3398DFD32332C9BC004F5E6F /* URLSessionTaskDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionTaskDelegateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				339485D823299DE900A991F0 /* AppDelegate.swift */,
+				339485EE232B0E3400A991F0 /* Downloader */,
+				3398DFD02332C582004F5E6F /* Credential Helper */,
 				339485DA23299DE900A991F0 /* ViewController.swift */,
 				339485DC23299DE900A991F0 /* Main.storyboard */,
 				339485DF23299DEC00A991F0 /* Assets.xcassets */,
@@ -62,6 +70,23 @@
 				339485E423299DEC00A991F0 /* Info.plist */,
 			);
 			path = DataDownload_1.0;
+			sourceTree = "<group>";
+		};
+		339485EE232B0E3400A991F0 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				339485EA232B0DC700A991F0 /* Downloader.swift */,
+				3398DFD32332C9BC004F5E6F /* URLSessionTaskDelegateExtension.swift */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		3398DFD02332C582004F5E6F /* Credential Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3398DFD12332C5AF004F5E6F /* CredentialCreater.swift */,
+			);
+			path = "Credential Helper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3398DFD42332C9BC004F5E6F /* URLSessionTaskDelegateExtension.swift in Sources */,
 				339485DB23299DE900A991F0 /* ViewController.swift in Sources */,
 				339485D923299DE900A991F0 /* AppDelegate.swift in Sources */,
+				339485EB232B0DC700A991F0 /* Downloader.swift in Sources */,
+				3398DFD22332C5AF004F5E6F /* CredentialCreater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
